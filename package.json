@@ -1,0 +1,21 @@
+{
+  "name": "appattic",
+  "version": "1.0.0",
+  "description": "image generating app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+
+  },
+  "author": "lord",
+  "license": "ISC",
+  "dependencies": {
+    "canvas": "^2.8.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "hsl-to-hex": "^1.0.0",
+    "nodemon": "^2.0.8"
+  }
+}
