@@ -63,7 +63,7 @@ app.post("/", (req, res) => {
   });
 });
 
-app.use("/uploads", express.static("uploads");
+app.use("/uploads", express.static("uploads"));
 
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
